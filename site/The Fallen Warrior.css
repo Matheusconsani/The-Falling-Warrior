@@ -1,0 +1,289 @@
+@font-face {
+  font-family: 'Old London';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Old London'), url('https://fonts.cdnfonts.com/s/7865/Olondon_.woff') format('woff');
+}
+
+a { 
+  color: black; 
+  text-decoration: none; 
+}
+h1 { 
+  color: black; 
+  text-align: center; 
+}
+h4 { color: white; 
+  text-align: center; 
+}
+
+body {
+  background-color: #000;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #b19c6d;
+  padding: 5px;
+  font-size: 18px;
+  border: solid gold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul:first-of-type li {
+  margin-left: 200px;
+  list-style: none;
+  position: relative;
+}
+
+nav ul:last-of-type {
+  margin-right: 40px;
+  font-weight: bold;
+}
+
+nav ul li:hover {
+  color: gold;
+  font-size: 20px;
+}
+
+.dropdown { 
+position: relative; 
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  z-index: 100;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  transform: translateX(-70%);
+}
+.dropdown-menu li a {
+  background-color: #b19c6d;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: solid black;
+}
+.dropdown-menu li a:hover {
+  background-color: gold;
+  color: black;
+}
+.dropdown:hover .dropdown-menu 
+{
+  display: block; 
+}
+
+.principal {
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  background-image: url(1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.principal img {
+  height: 350px;
+  width: 350px;
+  max-width: 100%;
+  height: auto;
+}
+
+.aa {
+  color: #b19c6d;
+  font-family: 'MedievalSharp', sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+.primeiras_div {
+  display: flex;
+  font-size: 20px;
+  height: 300px;
+  width: 100%;
+  background-color: #b19c6d;
+  text-align: center;
+  border: solid gold;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  gap: 1rem;
+}
+.img_direita, .img_esquerda {
+  height: 200px;
+  width: 200px;
+  margin: 30px;
+  flex-shrink: 50px;
+}
+.img_direita {
+   float: right; 
+}
+.img_esquerda { 
+  float: left; 
+}
+
+.divDungeons_mae {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+.divDungeons_filha {
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 600px;
+}
+.divDungeons_filha img {
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.div_tutorial {
+  color: black;
+  height: 400px;
+  text-align: center;
+  background-color: white;
+  align-content: center;
+  font-size: 40px;
+}
+.div_tutorial img {
+  height: 350px;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+}
+.div_sobre{
+    border: solid gold;
+    text-align: center;
+    font-size: x-large;
+}
+.div_story-board {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  border: solid gold;
+  color: white;
+  padding: 20px 0;
+}
+.div_stfilha {
+  text-align: center;
+}
+.div_story-board img {
+  border: solid gold;
+  margin-top: 10px;
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  height: auto;
+}
+.div_stfilha p {
+  margin-top: 10px;
+}
+
+.div_diario {
+  height: 1550px;
+  background-color: #b19c6d;
+  color: black;
+  text-align: center;
+  padding-top: 1rem;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+.texto_lore{
+    color: gold;
+    font-family: 'Old London', sans-serif;
+}
+
+@media (max-width: 1024px) {
+  nav ul:first-of-type li { 
+    margin-left: 100px; 
+  }
+  .img_direita, .img_esquerda { 
+    width: 150px; 
+    height: 150px; 
+    margin: 20px; 
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul:first-of-type li { 
+    margin-left: 50px; 
+    font-size: 16px; 
+  }
+  .primeiras_div { 
+    flex-direction: column; 
+    height: auto; 
+  }
+  .img_direita, .img_esquerda {
+    float: none;
+    margin: 10px auto;
+    width: 50%;
+    height: auto;
+  }
+  .divDungeons_filha img { 
+    width: 90%; 
+  }
+  .div_story-board { 
+    grid-template-columns: 1fr; 
+    gap: 15px; 
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul:first-of-type li {
+    margin-left: 20px; 
+    font-size: 14px; 
+  }
+  .div_tutorial { 
+    font-size: 1.2rem; 
+    height: auto; 
+  }
+  .div_tutorial img { 
+    width: 95%; 
+  }
+  .div_diario img { 
+    width: 45%;
+  }
+}
